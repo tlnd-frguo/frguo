@@ -1,0 +1,5 @@
+{
+  "mvn:org.talend.libraries/jsoup-1.7.1/1.7.1/jar" : "mvn:org.talend.libraries/jsoup-1.7.1/1.7.1/jar",
+  "mvn:org.talend.libraries/gcal-0.1/0.1/jar" : "mvn:org.talend.libraries/gcal-0.1/0.1/jar",
+  "mvn:org.talend.libraries/ldap/0.0.1-SNAPSHOT/jar" : "mvn:org.talend.libraries/ldap/0.0.1-SNAPSHOT/jar"
+}

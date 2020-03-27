@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_dF-9MK-GEeirVpVWk01lDg" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_dF-9Ma-GEeirVpVWk01lDg"/>
+  <parameters xmi:id="_dF-9Mq-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_dF-9M6-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_dF-9NK-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_dF-9Na-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_dF-9Nq-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_dF-9N6-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_dF-9OK-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_dF-9Oa-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_dF-9Oq-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_dF-9O6-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_dF-9PK-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_dF-9Pa-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_dF-9Pq-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_dF-9P6-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_dF-9QK-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_dF-9Qa-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_dF-9Qq-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_dF-9Q6-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_rydrYFNSEei23u1qr-SPiw" name="DataOperation" xmi:id="_dF-9RK-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tANQ4FNSEei23u1qr-SPiw" name="Mathematical" xmi:id="_dF-9Ra-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tAlEUFNSEei23u1qr-SPiw" name="Numeric" xmi:id="_dF-9Rq-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tAwqgFNSEei23u1qr-SPiw" name="Relational" xmi:id="_dF-9R6-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tA4mUFNSEei23u1qr-SPiw" name="StringHandling" xmi:id="_dF-9SK-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tBd1IFNSEei23u1qr-SPiw" name="TalendDataGenerator" xmi:id="_dF-9Sa-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tBxXIFNSEei23u1qr-SPiw" name="TalendDate" xmi:id="_dF-9Sq-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tCdToFNSEei23u1qr-SPiw" name="TalendString" xmi:id="_dF-9S6-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tCw1oFNSEei23u1qr-SPiw" name="TalendStringUtil" xmi:id="_dF-9TK-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tC5YgFNSEei23u1qr-SPiw" name="DataMasking" xmi:id="_dF-9Ta-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tDPWwFNSEei23u1qr-SPiw" name="DataQuality" xmi:id="_dF-9Tq-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tDZu0FNSEei23u1qr-SPiw" name="DataQualityDependencies" xmi:id="_dF-9T6-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tD7TQFNSEei23u1qr-SPiw" name="DqStringHandling" xmi:id="_dF-9UK-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tEFEQFNSEei23u1qr-SPiw" name="DQTechnical" xmi:id="_dF-9Ua-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tFL3gFNSEei23u1qr-SPiw" name="MDM" xmi:id="_dF-9Uq-GEeirVpVWk01lDg"/>
+    <routinesParameter id="_tFYr0FNSEei23u1qr-SPiw" name="SQLike" xmi:id="_dF-9U6-GEeirVpVWk01lDg"/>
+  </parameters>
+  <node componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224" xmi:id="_dF-9VK-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMessagingEndpoint_1" xmi:id="_dF-9Va-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;timer:foo?period=1000&amp;repeatCount=1&quot;" xmi:id="_dF-9Vq-GEeirVpVWk01lDg"/>
+    <elementParameter field="TABLE" name="HOTLIBS" xmi:id="_dF-9V6-GEeirVpVWk01lDg"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_COMPONENT" value="false" xmi:id="_dF-9WK-GEeirVpVWk01lDg"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" show="false" value="" xmi:id="_dF-9Wa-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_dF-9Wq-GEeirVpVWk01lDg"/>
+  </node>
+  <node componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224" xmi:id="_dF-9W6-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_1" xmi:id="_dF-9XK-GEeirVpVWk01lDg"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;" xmi:id="_dF-9Xa-GEeirVpVWk01lDg"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;-----&quot;+exchange.getIn().getBody(String.class));" xmi:id="_dF-9Xq-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_dF-9X6-GEeirVpVWk01lDg"/>
+  </node>
+  <node componentName="cConfig" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192" xmi:id="_dF-9YK-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cConfig_1" xmi:id="_dF-9Ya-GEeirVpVWk01lDg"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;" xmi:id="_dF-9Yq-GEeirVpVWk01lDg"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;/*&#10;*&#9;Here you can put Java code that will be used within the route.&#10;* &#10;*   Usually you would register custom components in camelContext or&#10;*   manipulate typeConverterRegistry.&#10;*  &#10;*   For example:&#10;* &#10;*     // Declaring a custom component in the Camel Context&#10;*     camelContext.addComponent(&quot;component&quot;, new  org.apache.camel.component.dataset.DataSetComponent());&#10;* &#10;*     // Register a special type conversion &#10;*     typeConverterRegistry.addTypeConverter(String.class, Object.class, new org.apache.camel.impl.converter.ToStringTypeConverter());&#10;*/&#10;" xmi:id="_dF-9Y6-GEeirVpVWk01lDg"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_SE" show="false" xmi:id="_dF-9ZK-GEeirVpVWk01lDg"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" xmi:id="_dF-9Za-GEeirVpVWk01lDg">
+      <elementValue elementRef="JAR_NAME" value="ldap.jar" xmi:id="_dF-9Zq-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_PATH" value="" xmi:id="_dF-9Z6-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NEXUS_VERSION" value="0.0.1-SNAPSHOT" xmi:id="_dF-9aK-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NEXUS_PRE_VERSION" value="" xmi:id="_dF-9aa-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NAME" value="jsoup-1.7.1.jar" xmi:id="_dF-9aq-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_PATH" value="" xmi:id="_dF-9a6-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NEXUS_VERSION" value="1.7.1" xmi:id="_dF-9bK-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NEXUS_PRE_VERSION" value="" xmi:id="_dF-9ba-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NAME" value="gcal-0.1.jar" xmi:id="_dF-9bq-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_PATH" value="" xmi:id="_dF-9b6-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NEXUS_VERSION" value="0.1" xmi:id="_dF-9cK-GEeirVpVWk01lDg"/>
+      <elementValue elementRef="JAR_NEXUS_PRE_VERSION" value="" xmi:id="_dF-9ca-GEeirVpVWk01lDg"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="WARNING" value="*Note: External JARs will not be embedded in OSGi bundle by default, to configure it please edit Route Manifest" xmi:id="_dF-9cq-GEeirVpVWk01lDg"/>
+    <elementParameter field="CHECK" name="USE_MDC_LOGGING" value="false" xmi:id="_dF-9c6-GEeirVpVWk01lDg"/>
+    <elementParameter field="CHECK_NEXUS_BUTTON" name="CHECK_OPTION" value="&quot;&quot;" xmi:id="_dF-9dK-GEeirVpVWk01lDg"/>
+    <elementParameter field="SYNC_NEXUS_BUTTON" name="SYNC_OPTION" value="&quot;&quot;" xmi:id="_dF-9da-GEeirVpVWk01lDg"/>
+    <elementParameter field="TABLE" name="NEED_UPDATE_LIST" xmi:id="_dF-9dq-GEeirVpVWk01lDg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_dF-9d6-GEeirVpVWk01lDg"/>
+  </node>
+  <connection connectorName="ROUTE" label="route1" lineStyle="14" metaname="cMessagingEndpoint_1" offsetLabelX="0" offsetLabelY="0" source="cMessagingEndpoint_1" target="cProcessor_1" xmi:id="_dF-9eK-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route1" xmi:id="_dF-9ea-GEeirVpVWk01lDg"/>
+  </connection>
+  <note opaque="true" posX="256" posY="0" sizeHeight="160" sizeWidth="641" text="Route with cConfig with three external jars:&#13;&#10;Can download three jars from:&#13;&#10;http://www.java2s.com/Code/Jar/j/Downloadjsoup171jar.htm&#13;&#10;http://www.java2s.com/Code/Jar/l/Downloadldapjar.htm&#13;&#10;http://www.java2s.com/Code/Jar/g/Downloadgcal01jar.htm&#13;&#10;" xmi:id="_dF-9eq-GEeirVpVWk01lDg"/>
+  <subjob xmi:id="_dF-9e6-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMessagingEndpoint_1" xmi:id="_dF-9fK-GEeirVpVWk01lDg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_dF-9fa-GEeirVpVWk01lDg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_dF-9fq-GEeirVpVWk01lDg"/>
+  </subjob>
+  <subjob xmi:id="_dF-9f6-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_1" xmi:id="_dF-9gK-GEeirVpVWk01lDg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_dF-9ga-GEeirVpVWk01lDg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_dF-9gq-GEeirVpVWk01lDg"/>
+  </subjob>
+  <subjob xmi:id="_dF-9g6-GEeirVpVWk01lDg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cConfig_1" xmi:id="_dF-9hK-GEeirVpVWk01lDg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_dF-9ha-GEeirVpVWk01lDg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_dF-9hq-GEeirVpVWk01lDg"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_60be0779-5ed2-4cfe-9760-73ce39ea390a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5rnlFaztcD18Kb2AaB24FhDem+e5gRSuy024HR5NjJNeWrGfMQXk787Ttg3LObUD42Bkhl/RE35z
+7s4HJ7pB9A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bc524568-d105-4bbb-9ba2-70d0570146f7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gvTlExbzraMGREGVzH1K03hx4RwiPF3kwmaYl+/f0li1kJIHNpy5isfKVpIcPgnTZR+RXoZRklXx
+z5dGmt/47w==</DigestValue></Reference></SignedInfo><SignatureValue>DwIHfVDk1F9YVKC3iC9+UjV6mYYNfMbFNFm74mBtd/z82T9vwkrhXWeaWb9y0idtEZ4Nwsj57dOs
+i5p7x9U5fa11Nr/9p1NAkN8SMgpqB+BinVGq0qrno1JYlYhKMWvHA86zFUVE5x8QCL0P4VRHv3Pn
+jDSTa9Tgdc5LzZiYrkrIB3myOAPTmYmHz9TIs0SVthDq/ptf3/Irz/gPnMJv6C4ynaW/h8KxVSF0
+s004UaZLbbAranLDjebuBb/FEDwCItOBA0PZJCufE0F7VuZQaduGdI5CdnQGEVEiXAPsPDHovS0L
+dtarrfJP+rPLOMN/zNZd19pYq4MJCMz2KJo8dw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bc524568-d105-4bbb-9ba2-70d0570146f7" Target="#_60be0779-5ed2-4cfe-9760-73ce39ea390a"><Timestamp>2018-09-03 14:34:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

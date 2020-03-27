@@ -1,0 +1,13 @@
+package routines;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class CurrentTimeRoutine {
+
+    public static String getCurrentDateTime() {
+    	LocalDateTime now = LocalDateTime.now();    	
+    	return String.format(" - [%s]", 
+    			now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+    }
+}

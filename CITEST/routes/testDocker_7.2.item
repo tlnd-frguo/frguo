@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_B6q48C4DEeqySaqZJHe2Mg" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_B6q48S4DEeqySaqZJHe2Mg"/>
+  <parameters xmi:id="_B6q48i4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_B6q48y4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_B6q49C4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_B6q49S4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_B6q49i4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_B6q49y4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_B6q4-C4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_B6q4-S4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_B6q4-i4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_B6q4-y4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_B6q4_C4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_B6q4_S4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_B6q4_i4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_B6q4_y4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_B6q5AC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_B6q5AS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_B6q5Ai4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_B6q5Ay4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HNKPwK-GEeirVpVWk01lDg" name="DataOperation" xmi:id="_B6q5BC4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HN_9QK-GEeirVpVWk01lDg" name="Mathematical" xmi:id="_B6q5BS4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HMrHkK-GEeirVpVWk01lDg" name="Numeric" xmi:id="_B6q5Bi4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HNm7sK-GEeirVpVWk01lDg" name="Relational" xmi:id="_B6q5By4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HONYoK-GEeirVpVWk01lDg" name="SQLike" xmi:id="_B6q5CC4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HNqmEK-GEeirVpVWk01lDg" name="StringHandling" xmi:id="_B6q5CS4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HK8CMK-GEeirVpVWk01lDg" name="TalendDataGenerator" xmi:id="_B6q5Ci4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HNRkgK-GEeirVpVWk01lDg" name="TalendDate" xmi:id="_B6q5Cy4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HNC7AK-GEeirVpVWk01lDg" name="TalendStringUtil" xmi:id="_B6q5DC4DEeqySaqZJHe2Mg"/>
+    <routinesParameter id="_HMzDYK-GEeirVpVWk01lDg" name="TalendString" xmi:id="_B6q5DS4DEeqySaqZJHe2Mg"/>
+  </parameters>
+  <node componentName="cTimer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256" xmi:id="_B6q5Di4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cTimer_1" xmi:id="_B6q5Dy4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="PERIOD" value="1000" xmi:id="_B6q5EC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="REPEATCOUNT" value="1" xmi:id="_B6q5ES4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="DELAY" value="1000" xmi:id="_B6q5Ei4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="CHECK" name="FIXEDRATE" value="false" xmi:id="_B6q5Ey4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="CHECK" name="DAEMON" value="true" xmi:id="_B6q5FC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="CHECK" name="SET_TIME" value="false" xmi:id="_B6q5FS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="TIME" show="false" value="&quot;&quot;" xmi:id="_B6q5Fi4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="(yyyy-MM-dd HH:mm:ss | yyyy-MM-dd'T'HH:mm:ss)" xmi:id="_B6q5Fy4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_B6q5GC4DEeqySaqZJHe2Mg"/>
+  </node>
+  <node componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256" xmi:id="_B6q5GS4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_1" xmi:id="_B6q5Gi4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;" xmi:id="_B6q5Gy4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="exchange.getIn().setBody(&quot;&lt;root&gt;&lt;el&gt;test1&lt;/el&gt;&lt;/root&gt;&quot;);" xmi:id="_B6q5HC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_B6q5HS4DEeqySaqZJHe2Mg"/>
+  </node>
+  <node componentName="cMap" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="256" xmi:id="_B6q5Hi4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMap_1" xmi:id="_B6q5Hy4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="EXTERNAL" name="MAP_EDITOR" value="" xmi:id="_B6q5IC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;testMap&quot;" xmi:id="_B6q5IS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT_TYPE" value="default" xmi:id="_B6q5Ii4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="RADIO" name="IS_NEW" show="false" value="false" xmi:id="_B6q5Iy4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="FATAL" xmi:id="_B6q5JC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_B6q5JS4DEeqySaqZJHe2Mg"/>
+  </node>
+  <node componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256" xmi:id="_B6q5Ji4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_2" xmi:id="_B6q5Jy4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;" xmi:id="_B6q5KC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;-----&quot;+exchange.getIn().getBody(String.class));" xmi:id="_B6q5KS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_B6q5Ki4DEeqySaqZJHe2Mg"/>
+  </node>
+  <connection connectorName="ROUTE" label="route3" lineStyle="14" metaname="cTimer_1" offsetLabelX="0" offsetLabelY="0" source="cTimer_1" target="cProcessor_1" xmi:id="_B6q5Ky4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route3" xmi:id="_B6q5LC4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value="" xmi:id="_B6q5LS4DEeqySaqZJHe2Mg"/>
+  </connection>
+  <connection connectorName="ROUTE" label="route1" lineStyle="14" metaname="cProcessor_1" offsetLabelX="0" offsetLabelY="0" source="cProcessor_1" target="cMap_1" xmi:id="_B6q5Li4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route1" xmi:id="_B6q5Ly4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value="" xmi:id="_B6q5MC4DEeqySaqZJHe2Mg"/>
+  </connection>
+  <connection connectorName="ROUTE" label="route2" lineStyle="14" metaname="cMap_1" offsetLabelX="0" offsetLabelY="0" source="cMap_1" target="cProcessor_2" xmi:id="_B6q5MS4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route2" xmi:id="_B6q5Mi4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value="" xmi:id="_B6q5My4DEeqySaqZJHe2Mg"/>
+  </connection>
+  <subjob xmi:id="_B6q5NC4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cTimer_1" xmi:id="_B6q5NS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_B6q5Ni4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_B6q5Ny4DEeqySaqZJHe2Mg"/>
+  </subjob>
+  <subjob xmi:id="_B6q5OC4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_1" xmi:id="_B6q5OS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_B6q5Oi4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_B6q5Oy4DEeqySaqZJHe2Mg"/>
+  </subjob>
+  <subjob xmi:id="_B6q5PC4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMap_1" xmi:id="_B6q5PS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_B6q5Pi4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_B6q5Py4DEeqySaqZJHe2Mg"/>
+  </subjob>
+  <subjob xmi:id="_B6q5QC4DEeqySaqZJHe2Mg">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_2" xmi:id="_B6q5QS4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_B6q5Qi4DEeqySaqZJHe2Mg"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_B6q5Qy4DEeqySaqZJHe2Mg"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7573d644-65eb-48c8-b0ab-073cd4c8ce6f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+SHOdlUMtfX0SYXotTqMhHrfZGOqLzY8IpnP/UaNABVRwO6rMEPxyfHf3zNjz2Cn/Q8im0SCNIvK
+xdEikcibfQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_29bf5f13-ff5d-4a93-a434-1deb5ab12fb8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3fURkxLHJp8Osc1Bk+qnHJTfbEOB0S5RFX2lQ7jWft6qVOd6NjDbknKhbfQfv8uK6rJEXVBQA4Cy
+6WnaZDiH0A==</DigestValue></Reference></SignedInfo><SignatureValue>MW/lD+9tSkiG9DbFrzBDjTkp2XpJZqQglTIGbx5U03x6JJFhpmQpoZyEUfCUiteMqcG0LZeWUcG8
+cDxOr7xOEL6IKBdTcKy008JTmbZZZkzqXeGQYhJu1NOOzdjmQ2O6Y9O0mepEOl/lmQDrXxlwcLVy
+/HLTFWLSYB+CwyBW2S+NKyCPQsA+QbGferSaOKehb9tyGCS0sUj3biKV+NKrQLp8hv2YIe4TpU7u
+lB/xSz4YLET8Ff/9P2mXOZZsceJ3nWVj1QZpMe6xPeJtr+YLK6/gCV3vQOyZQe8pv+cov/8KLjg0
+ySKaP0vznTLvImFZsWdzKAUxzW1H1m3gVTuAQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_29bf5f13-ff5d-4a93-a434-1deb5ab12fb8" Target="#_7573d644-65eb-48c8-b0ab-073cd4c8ce6f"><Timestamp>2020-01-03 08:28:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

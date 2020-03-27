@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/FlatInput.xml' outStruct='Structures/RestGetResponse.xml' inputRep='173' outputRep='172' nextMap='' inputStructUserName='FlatInput' outputStructUserName='RestGetResponse' V1='4' name='FlatToRestResponse' incarnation='466'>
+  <inputMapElem t='200' id='2' V200='7' input='true' shown='5' structElemExists='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='requestKey'>
+    <mapNode t='190' idref='1'/>
+  </inputMapElem>
+  <outputMapElem t='200' id='3' V200='7' shown='5' structElemExists='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='ResponseElement'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/requestKey,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='4' V200='7' shown='5' structElemExists='true' new='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='StringType'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='5' V200='7' shown='5' structElemExists='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='value'>
+        <mapNode t='190' idref='1'/>
+        <value>Java([className="java.lang.String",methodName="toUpperCase"],in$/requestKey)</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='693' id='6' V693='1' delimiter=',' structName='Structures/FlatInput.xml' V690='1' padOutput='true' trimInput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='692' id='7' V692='1' V690='1'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='8' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' idref='7'/>
+  <child t='165' id='9' V1='4' name='Document Bindings'>
+    <child t='166' id='10' V166='5' docType='1' V1='4' name='in$/requestKey'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='11' V166='5' docType='2' V1='4' name='out$/body'>
+      <elemNode t='200' idref='3'/>
+    </child>
+  </child>
+  <child t='201' id='12' V1='4' name='Inherits From'>
+  </child>
+</root>

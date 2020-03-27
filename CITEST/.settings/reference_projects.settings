@@ -1,0 +1,6 @@
+{
+  "reference_projects" : [ {
+    "project" : "CITEST_REFPROJECT",
+    "branch" : "master"
+  } ]
+}

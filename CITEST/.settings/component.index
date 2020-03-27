@@ -1,0 +1,1929 @@
+[ {
+  "id" : "Y291Y2hiYXNlI0NvdWNoYmFzZQ",
+  "version" : "0",
+  "parentId" : null,
+  "configurationType" : null,
+  "name" : "Couchbase",
+  "displayName" : "Couchbase",
+  "edges" : [ "Y291Y2hiYXNlI0NvdWNoYmFzZSNkYXRhc3RvcmUjQ291Y2hiYXNlRGF0YVN0b3Jl" ],
+  "properties" : [ ],
+  "actions" : null
+}, {
+  "id" : "Y291Y2hiYXNlI0NvdWNoYmFzZSNkYXRhc2V0I0NvdWNoYmFzZURhdGFTZXQ",
+  "version" : "1",
+  "parentId" : "Y291Y2hiYXNlI0NvdWNoYmFzZSNkYXRhc3RvcmUjQ291Y2hiYXNlRGF0YVN0b3Jl",
+  "configurationType" : "dataset",
+  "name" : "CouchbaseDataSet",
+  "displayName" : "Couchbase Dataset",
+  "edges" : [ ],
+  "properties" : [ {
+    "path" : "configuration",
+    "name" : "configuration",
+    "displayName" : "DataSet",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "ui::gridlayout::Advanced::value" : "datastore",
+      "ui::gridlayout::Main::value" : "datastore|schema|bucket|documentType",
+      "documentation::value" : "dataset",
+      "configurationtype::name" : "CouchbaseDataSet",
+      "configurationtype::type" : "dataset",
+      "definition::parameter::index" : "0"
+    },
+    "placeholder" : "configuration",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.bucket",
+    "name" : "bucket",
+    "displayName" : "Bucket",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Bucket name"
+    },
+    "placeholder" : "bucket",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.datastore",
+    "name" : "datastore",
+    "displayName" : "Datastore",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "ui::gridlayout::Advanced::value" : "connectTimeout",
+      "ui::gridlayout::Main::value" : "bootstrapNodes|username|password",
+      "documentation::value" : "Connection",
+      "action::healthcheck" : "healthCheck",
+      "configurationtype::name" : "CouchbaseDataStore",
+      "configurationtype::type" : "datastore"
+    },
+    "placeholder" : "datastore",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.datastore.bootstrapNodes",
+    "name" : "bootstrapNodes",
+    "displayName" : "Bootstrap Nodes",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Bootstrap nodes"
+    },
+    "placeholder" : "bootstrapNodes",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.datastore.connectTimeout",
+    "name" : "connectTimeout",
+    "displayName" : "Connect Timeout",
+    "type" : "NUMBER",
+    "defaultValue" : "20",
+    "validation" : {
+      "required" : null,
+      "min" : 5,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Set the maximum number of seconds that a client will wait for opened a Bucket. Min value is 5 seconds."
+    },
+    "placeholder" : "connectTimeout",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.datastore.password",
+    "name" : "password",
+    "displayName" : "Password",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Password",
+      "ui::credential" : "true"
+    },
+    "placeholder" : "password",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.datastore.username",
+    "name" : "username",
+    "displayName" : "Username",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Username"
+    },
+    "placeholder" : "username",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.documentType",
+    "name" : "documentType",
+    "displayName" : "Document type",
+    "type" : "ENUM",
+    "defaultValue" : "JSON",
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : [ "JSON", "BINARY", "STRING" ]
+    },
+    "metadata" : {
+      "documentation::value" : "Document type"
+    },
+    "placeholder" : "documentType",
+    "proposalDisplayNames" : {
+      "JSON" : "JSON",
+      "BINARY" : "Binary",
+      "STRING" : "String"
+    }
+  }, {
+    "path" : "configuration.schema",
+    "name" : "schema",
+    "displayName" : "Schema",
+    "type" : "ARRAY",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "ui::structure::value" : "__default__",
+      "ui::structure::discoverSchema" : "discover",
+      "documentation::value" : "Schema",
+      "action::schema::type" : "OUT",
+      "action::schema::discoverSchema" : "discover",
+      "ui::structure::type" : "OUT",
+      "action::schema" : "discover"
+    },
+    "placeholder" : "schema",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.schema[]",
+    "name" : "schema[]",
+    "displayName" : "schema[${index}]",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : { },
+    "placeholder" : "schema[${index}]",
+    "proposalDisplayNames" : null
+  } ],
+  "actions" : [ {
+    "family" : "Couchbase",
+    "name" : "healthCheck",
+    "type" : "healthcheck",
+    "displayName" : "Check connection",
+    "properties" : [ {
+      "path" : "configuration.dataset.connection",
+      "name" : "configuration.dataset.connection",
+      "displayName" : "configuration.dataset.connection",
+      "type" : "OBJECT",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::gridlayout::Advanced::value" : "connectTimeout",
+        "ui::gridlayout::Main::value" : "bootstrapNodes|username|password",
+        "documentation::value" : "Couchbase connection",
+        "action::healthcheck" : "healthCheck",
+        "configurationtype::name" : "CouchbaseDataStore",
+        "configurationtype::type" : "datastore",
+        "definition::parameter::index" : "0"
+      },
+      "placeholder" : "configuration.dataset.connection",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.bootstrapNodes",
+      "name" : "bootstrapNodes",
+      "displayName" : "Bootstrap Nodes",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Bootstrap nodes"
+      },
+      "placeholder" : "bootstrapNodes",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.connectTimeout",
+      "name" : "connectTimeout",
+      "displayName" : "Connect Timeout",
+      "type" : "NUMBER",
+      "defaultValue" : "20",
+      "validation" : {
+        "required" : null,
+        "min" : 5,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Set the maximum number of seconds that a client will wait for opened a Bucket. Min value is 5 seconds."
+      },
+      "placeholder" : "connectTimeout",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.password",
+      "name" : "password",
+      "displayName" : "Password",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Password",
+        "ui::credential" : "true"
+      },
+      "placeholder" : "password",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.username",
+      "name" : "username",
+      "displayName" : "Username",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Username"
+      },
+      "placeholder" : "username",
+      "proposalDisplayNames" : null
+    } ]
+  }, {
+    "family" : "Couchbase",
+    "name" : "discover",
+    "type" : "schema",
+    "displayName" : "Discover schema",
+    "properties" : [ {
+      "path" : "dataSet",
+      "name" : "dataSet",
+      "displayName" : "dataSet",
+      "type" : "OBJECT",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::gridlayout::Advanced::value" : "datastore",
+        "ui::gridlayout::Main::value" : "datastore|schema|bucket|documentType",
+        "documentation::value" : "Couchbase DataSet",
+        "configurationtype::name" : "CouchbaseDataSet",
+        "configurationtype::type" : "dataset",
+        "definition::parameter::index" : "0"
+      },
+      "placeholder" : "dataSet",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.bucket",
+      "name" : "bucket",
+      "displayName" : "Bucket",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Bucket name"
+      },
+      "placeholder" : "bucket",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.datastore",
+      "name" : "datastore",
+      "displayName" : "Datastore",
+      "type" : "OBJECT",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::gridlayout::Advanced::value" : "connectTimeout",
+        "ui::gridlayout::Main::value" : "bootstrapNodes|username|password",
+        "documentation::value" : "Connection",
+        "action::healthcheck" : "healthCheck",
+        "configurationtype::name" : "CouchbaseDataStore",
+        "configurationtype::type" : "datastore"
+      },
+      "placeholder" : "datastore",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.datastore.bootstrapNodes",
+      "name" : "bootstrapNodes",
+      "displayName" : "Bootstrap Nodes",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Bootstrap nodes"
+      },
+      "placeholder" : "bootstrapNodes",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.datastore.connectTimeout",
+      "name" : "connectTimeout",
+      "displayName" : "Connect Timeout",
+      "type" : "NUMBER",
+      "defaultValue" : "20",
+      "validation" : {
+        "required" : null,
+        "min" : 5,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Set the maximum number of seconds that a client will wait for opened a Bucket. Min value is 5 seconds."
+      },
+      "placeholder" : "connectTimeout",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.datastore.password",
+      "name" : "password",
+      "displayName" : "Password",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Password",
+        "ui::credential" : "true"
+      },
+      "placeholder" : "password",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.datastore.username",
+      "name" : "username",
+      "displayName" : "Username",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Username"
+      },
+      "placeholder" : "username",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.documentType",
+      "name" : "documentType",
+      "displayName" : "Document type",
+      "type" : "ENUM",
+      "defaultValue" : "JSON",
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : [ "JSON", "BINARY", "STRING" ]
+      },
+      "metadata" : {
+        "documentation::value" : "Document type"
+      },
+      "placeholder" : "documentType",
+      "proposalDisplayNames" : {
+        "JSON" : "JSON",
+        "BINARY" : "Binary",
+        "STRING" : "String"
+      }
+    }, {
+      "path" : "dataSet.schema",
+      "name" : "schema",
+      "displayName" : "Schema",
+      "type" : "ARRAY",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::structure::value" : "__default__",
+        "ui::structure::discoverSchema" : "discover",
+        "documentation::value" : "Schema",
+        "action::schema::type" : "OUT",
+        "action::schema::discoverSchema" : "discover",
+        "ui::structure::type" : "OUT",
+        "action::schema" : "discover"
+      },
+      "placeholder" : "schema",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "dataSet.schema[]",
+      "name" : "schema[]",
+      "displayName" : "schema[${index}]",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : { },
+      "placeholder" : "schema[${index}]",
+      "proposalDisplayNames" : null
+    } ]
+  } ]
+}, {
+  "id" : "Y291Y2hiYXNlI0NvdWNoYmFzZSNkYXRhc3RvcmUjQ291Y2hiYXNlRGF0YVN0b3Jl",
+  "version" : "1",
+  "parentId" : "Y291Y2hiYXNlI0NvdWNoYmFzZQ",
+  "configurationType" : "datastore",
+  "name" : "CouchbaseDataStore",
+  "displayName" : "Couchbase connection",
+  "edges" : [ "Y291Y2hiYXNlI0NvdWNoYmFzZSNkYXRhc2V0I0NvdWNoYmFzZURhdGFTZXQ" ],
+  "properties" : [ {
+    "path" : "configuration",
+    "name" : "configuration",
+    "displayName" : "Datastore",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "ui::gridlayout::Advanced::value" : "connectTimeout",
+      "ui::gridlayout::Main::value" : "bootstrapNodes|username|password",
+      "documentation::value" : "Connection",
+      "action::healthcheck" : "healthCheck",
+      "configurationtype::name" : "CouchbaseDataStore",
+      "configurationtype::type" : "datastore",
+      "definition::parameter::index" : "0"
+    },
+    "placeholder" : "configuration",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.bootstrapNodes",
+    "name" : "bootstrapNodes",
+    "displayName" : "Bootstrap Nodes",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Bootstrap nodes"
+    },
+    "placeholder" : "bootstrapNodes",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.connectTimeout",
+    "name" : "connectTimeout",
+    "displayName" : "Connect Timeout",
+    "type" : "NUMBER",
+    "defaultValue" : "20",
+    "validation" : {
+      "required" : null,
+      "min" : 5,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Set the maximum number of seconds that a client will wait for opened a Bucket. Min value is 5 seconds."
+    },
+    "placeholder" : "connectTimeout",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.password",
+    "name" : "password",
+    "displayName" : "Password",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Password",
+      "ui::credential" : "true"
+    },
+    "placeholder" : "password",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.username",
+    "name" : "username",
+    "displayName" : "Username",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Username"
+    },
+    "placeholder" : "username",
+    "proposalDisplayNames" : null
+  } ],
+  "actions" : [ {
+    "family" : "Couchbase",
+    "name" : "healthCheck",
+    "type" : "healthcheck",
+    "displayName" : "Check connection",
+    "properties" : [ {
+      "path" : "configuration.dataset.connection",
+      "name" : "configuration.dataset.connection",
+      "displayName" : "configuration.dataset.connection",
+      "type" : "OBJECT",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::gridlayout::Advanced::value" : "connectTimeout",
+        "ui::gridlayout::Main::value" : "bootstrapNodes|username|password",
+        "documentation::value" : "Couchbase connection",
+        "action::healthcheck" : "healthCheck",
+        "configurationtype::name" : "CouchbaseDataStore",
+        "configurationtype::type" : "datastore",
+        "definition::parameter::index" : "0"
+      },
+      "placeholder" : "configuration.dataset.connection",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.bootstrapNodes",
+      "name" : "bootstrapNodes",
+      "displayName" : "Bootstrap Nodes",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Bootstrap nodes"
+      },
+      "placeholder" : "bootstrapNodes",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.connectTimeout",
+      "name" : "connectTimeout",
+      "displayName" : "Connect Timeout",
+      "type" : "NUMBER",
+      "defaultValue" : "20",
+      "validation" : {
+        "required" : null,
+        "min" : 5,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Set the maximum number of seconds that a client will wait for opened a Bucket. Min value is 5 seconds."
+      },
+      "placeholder" : "connectTimeout",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.password",
+      "name" : "password",
+      "displayName" : "Password",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Password",
+        "ui::credential" : "true"
+      },
+      "placeholder" : "password",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "configuration.dataset.connection.username",
+      "name" : "username",
+      "displayName" : "Username",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Username"
+      },
+      "placeholder" : "username",
+      "proposalDisplayNames" : null
+    } ]
+  } ]
+}, {
+  "id" : "YXp1cmUtZGxzLWdlbjIjQXp1cmU",
+  "version" : "0",
+  "parentId" : null,
+  "configurationType" : null,
+  "name" : "Azure",
+  "displayName" : "Azure",
+  "edges" : [ "YXp1cmUtZGxzLWdlbjIjQXp1cmUjZGF0YXN0b3JlI0FkbHNHZW4yQ29ubmVjdGlvbg" ],
+  "properties" : [ ],
+  "actions" : null
+}, {
+  "id" : "YXp1cmUtZGxzLWdlbjIjQXp1cmUjZGF0YXN0b3JlI0FkbHNHZW4yQ29ubmVjdGlvbg",
+  "version" : "-1",
+  "parentId" : "YXp1cmUtZGxzLWdlbjIjQXp1cmU",
+  "configurationType" : "datastore",
+  "name" : "AdlsGen2Connection",
+  "displayName" : "Azure Data Lake Storage Gen2",
+  "edges" : [ "YXp1cmUtZGxzLWdlbjIjQXp1cmUjZGF0YXNldCNBZGxzR2VuMkRhdGFTZXQ" ],
+  "properties" : [ {
+    "path" : "configuration",
+    "name" : "configuration",
+    "displayName" : "Connection",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "ui::gridlayout::Advanced::value" : "timeout",
+      "ui::gridlayout::Main::value" : "authMethod|accountName|endpointSuffix|sharedKey|sas",
+      "documentation::value" : "ADLS Gen2 Connection",
+      "action::healthcheck" : "ACTION_HEALTHCHECK",
+      "configurationtype::name" : "AdlsGen2Connection",
+      "configurationtype::type" : "datastore",
+      "definition::parameter::index" : "0"
+    },
+    "placeholder" : "configuration",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.accountName",
+    "name" : "accountName",
+    "displayName" : "Account name",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Storage Account Name"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.authMethod",
+    "name" : "authMethod",
+    "displayName" : "Authentication method",
+    "type" : "ENUM",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : [ "SharedKey", "SAS" ]
+    },
+    "metadata" : {
+      "documentation::value" : "Authentication method"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : {
+      "SharedKey" : "Shared key",
+      "SAS" : "Shared access signature"
+    }
+  }, {
+    "path" : "configuration.endpointSuffix",
+    "name" : "endpointSuffix",
+    "displayName" : "Endpoint suffix",
+    "type" : "STRING",
+    "defaultValue" : "dfs.core.windows.net",
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Endpoint suffix"
+    },
+    "placeholder" : "dfs.core.windows.net",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.sas",
+    "name" : "sas",
+    "displayName" : "SAS token *",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "authMethod",
+      "documentation::value" : "Shared Access Signature",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "SAS",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.sharedKey",
+    "name" : "sharedKey",
+    "displayName" : "Shared key *",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "authMethod",
+      "documentation::value" : "Storage Shared Key",
+      "ui::credential" : "true",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "SharedKey",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.timeout",
+    "name" : "timeout",
+    "displayName" : "Timeout",
+    "type" : "NUMBER",
+    "defaultValue" : "600",
+    "validation" : {
+      "required" : null,
+      "min" : 5,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Timeout"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  } ],
+  "actions" : [ {
+    "family" : "Azure",
+    "name" : "ACTION_HEALTHCHECK",
+    "type" : "healthcheck",
+    "displayName" : "Check connection",
+    "properties" : [ {
+      "path" : "connection",
+      "name" : "connection",
+      "displayName" : "connection",
+      "type" : "OBJECT",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::gridlayout::Advanced::value" : "timeout",
+        "ui::gridlayout::Main::value" : "authMethod|accountName|endpointSuffix|sharedKey|sas",
+        "documentation::value" : "The datastore to connect Azure Data Lake Storage Gen2",
+        "action::healthcheck" : "ACTION_HEALTHCHECK",
+        "configurationtype::name" : "AdlsGen2Connection",
+        "configurationtype::type" : "datastore",
+        "definition::parameter::index" : "0"
+      },
+      "placeholder" : "connection",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.accountName",
+      "name" : "accountName",
+      "displayName" : "Account name",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Storage Account Name"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.authMethod",
+      "name" : "authMethod",
+      "displayName" : "Authentication method",
+      "type" : "ENUM",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : [ "SharedKey", "SAS" ]
+      },
+      "metadata" : {
+        "documentation::value" : "Authentication method"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : {
+        "SharedKey" : "Shared key",
+        "SAS" : "Shared access signature"
+      }
+    }, {
+      "path" : "connection.endpointSuffix",
+      "name" : "endpointSuffix",
+      "displayName" : "Endpoint suffix",
+      "type" : "STRING",
+      "defaultValue" : "dfs.core.windows.net",
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Endpoint suffix"
+      },
+      "placeholder" : "dfs.core.windows.net",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.sas",
+      "name" : "sas",
+      "displayName" : "SAS token *",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "condition::if::target" : "authMethod",
+        "documentation::value" : "Shared Access Signature",
+        "condition::if::evaluationStrategy" : "DEFAULT",
+        "condition::if::value" : "SAS",
+        "condition::if::negate" : "false"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.sharedKey",
+      "name" : "sharedKey",
+      "displayName" : "Shared key *",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "condition::if::target" : "authMethod",
+        "documentation::value" : "Storage Shared Key",
+        "ui::credential" : "true",
+        "condition::if::evaluationStrategy" : "DEFAULT",
+        "condition::if::value" : "SharedKey",
+        "condition::if::negate" : "false"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.timeout",
+      "name" : "timeout",
+      "displayName" : "Timeout",
+      "type" : "NUMBER",
+      "defaultValue" : "600",
+      "validation" : {
+        "required" : null,
+        "min" : 5,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Timeout"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    } ]
+  } ]
+}, {
+  "id" : "YXp1cmUtZGxzLWdlbjIjQXp1cmUjZGF0YXNldCNBZGxzR2VuMkRhdGFTZXQ",
+  "version" : "-1",
+  "parentId" : "YXp1cmUtZGxzLWdlbjIjQXp1cmUjZGF0YXN0b3JlI0FkbHNHZW4yQ29ubmVjdGlvbg",
+  "configurationType" : "dataset",
+  "name" : "AdlsGen2DataSet",
+  "displayName" : "",
+  "edges" : [ ],
+  "properties" : [ {
+    "path" : "configuration",
+    "name" : "configuration",
+    "displayName" : "",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "ui::gridlayout::Main::value" : "connection|filesystem|blobPath|format|csvConfiguration|avroConfiguration|parquetConfiguration|jsonConfiguration",
+      "documentation::value" : "Dataset",
+      "configurationtype::name" : "AdlsGen2DataSet",
+      "configurationtype::type" : "dataset",
+      "definition::parameter::index" : "0"
+    },
+    "placeholder" : "configuration",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.avroConfiguration",
+    "name" : "avroConfiguration",
+    "displayName" : "AVRO Configuration",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "format",
+      "documentation::value" : "Avro Configuration",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "AVRO_ENABLED",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "avroConfiguration",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.blobPath",
+    "name" : "blobPath",
+    "displayName" : "Blobs Path",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Path to Blob Object"
+    },
+    "placeholder" : "myFolder/mySubFolder/",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.connection",
+    "name" : "connection",
+    "displayName" : "Connection",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "ui::gridlayout::Advanced::value" : "timeout",
+      "ui::gridlayout::Main::value" : "authMethod|accountName|endpointSuffix|sharedKey|sas",
+      "documentation::value" : "ADLS Gen2 Connection",
+      "action::healthcheck" : "ACTION_HEALTHCHECK",
+      "configurationtype::name" : "AdlsGen2Connection",
+      "configurationtype::type" : "datastore"
+    },
+    "placeholder" : "connection",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.connection.accountName",
+    "name" : "accountName",
+    "displayName" : "Account name",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Storage Account Name"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.connection.authMethod",
+    "name" : "authMethod",
+    "displayName" : "Authentication method",
+    "type" : "ENUM",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : [ "SharedKey", "SAS" ]
+    },
+    "metadata" : {
+      "documentation::value" : "Authentication method"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : {
+      "SharedKey" : "Shared key",
+      "SAS" : "Shared access signature"
+    }
+  }, {
+    "path" : "configuration.connection.endpointSuffix",
+    "name" : "endpointSuffix",
+    "displayName" : "Endpoint suffix",
+    "type" : "STRING",
+    "defaultValue" : "dfs.core.windows.net",
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Endpoint suffix"
+    },
+    "placeholder" : "dfs.core.windows.net",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.connection.sas",
+    "name" : "sas",
+    "displayName" : "SAS token *",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "authMethod",
+      "documentation::value" : "Shared Access Signature",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "SAS",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.connection.sharedKey",
+    "name" : "sharedKey",
+    "displayName" : "Shared key *",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "authMethod",
+      "documentation::value" : "Storage Shared Key",
+      "ui::credential" : "true",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "SharedKey",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.connection.timeout",
+    "name" : "timeout",
+    "displayName" : "Timeout",
+    "type" : "NUMBER",
+    "defaultValue" : "600",
+    "validation" : {
+      "required" : null,
+      "min" : 5,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "documentation::value" : "Timeout"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration",
+    "name" : "csvConfiguration",
+    "displayName" : "CSV Configuration",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "ui::gridlayout::Main::value" : "fieldDelimiter,customFieldDelimiter|recordSeparator,customRecordSeparator|textEnclosureCharacter,escapeCharacter|header|csvSchema|fileEncoding,customFileEncoding",
+      "condition::if::target" : "format",
+      "documentation::value" : "CSV Configuration",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "CSV",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "csvConfiguration",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration.csvSchema",
+    "name" : "csvSchema",
+    "displayName" : "CSV Schema",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "documentation::value" : "Schema"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration.customFieldDelimiter",
+    "name" : "customFieldDelimiter",
+    "displayName" : "Custom field delimiter",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "fieldDelimiter",
+      "documentation::value" : "Your custom field delimiter",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "OTHER",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration.customFileEncoding",
+    "name" : "customFileEncoding",
+    "displayName" : "Custom Encoding",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "fileEncoding",
+      "documentation::value" : "Your custom file encoding format",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "OTHER",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "UTF-8",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration.customRecordSeparator",
+    "name" : "customRecordSeparator",
+    "displayName" : "Custom Record Separator",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "recordSeparator",
+      "documentation::value" : "Your custom record delimiter",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "OTHER",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration.escapeCharacter",
+    "name" : "escapeCharacter",
+    "displayName" : "Escape character",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "documentation::value" : "Escape character"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration.fieldDelimiter",
+    "name" : "fieldDelimiter",
+    "displayName" : "Field Delimiter",
+    "type" : "ENUM",
+    "defaultValue" : "SEMICOLON",
+    "validation" : {
+      "required" : null,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : [ "SEMICOLON", "COMMA", "TABULATION", "SPACE", "OTHER" ]
+    },
+    "metadata" : {
+      "documentation::value" : "Symbol(s) used to separate fields"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : {
+      "SEMICOLON" : "Semicolon",
+      "COMMA" : "Comma",
+      "TABULATION" : "Tabulation",
+      "SPACE" : "Space",
+      "OTHER" : "Other"
+    }
+  }, {
+    "path" : "configuration.csvConfiguration.fileEncoding",
+    "name" : "fileEncoding",
+    "displayName" : "File Encoding",
+    "type" : "ENUM",
+    "defaultValue" : "UTF8",
+    "validation" : {
+      "required" : null,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : [ "UTF8", "ISO_8859_15", "OTHER" ]
+    },
+    "metadata" : {
+      "documentation::value" : "File Encoding"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : {
+      "UTF8" : "UTF-8",
+      "ISO_8859_15" : "ISO-8859-15",
+      "OTHER" : "Other"
+    }
+  }, {
+    "path" : "configuration.csvConfiguration.header",
+    "name" : "header",
+    "displayName" : "Header",
+    "type" : "BOOLEAN",
+    "defaultValue" : "false",
+    "validation" : null,
+    "metadata" : {
+      "documentation::value" : "Has header line"
+    },
+    "placeholder" : "header",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.csvConfiguration.recordSeparator",
+    "name" : "recordSeparator",
+    "displayName" : "Record Separator",
+    "type" : "ENUM",
+    "defaultValue" : "CRLF",
+    "validation" : {
+      "required" : null,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : [ "LF", "CR", "CRLF", "OTHER" ]
+    },
+    "metadata" : {
+      "documentation::value" : "Symbol(s) used to separate records"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : {
+      "LF" : "LF",
+      "CR" : "CR",
+      "CRLF" : "CRLF",
+      "OTHER" : "Other"
+    }
+  }, {
+    "path" : "configuration.csvConfiguration.textEnclosureCharacter",
+    "name" : "textEnclosureCharacter",
+    "displayName" : "Text Enclosure Character",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "documentation::value" : "Text enclosure character"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.filesystem",
+    "name" : "filesystem",
+    "displayName" : "Filesystem",
+    "type" : "STRING",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : null
+    },
+    "metadata" : {
+      "action::suggestions" : "ACTION_FILESYSTEMS",
+      "documentation::value" : "FileSystem",
+      "action::suggestions::parameters" : "connection"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.format",
+    "name" : "format",
+    "displayName" : "Format",
+    "type" : "ENUM",
+    "defaultValue" : null,
+    "validation" : {
+      "required" : true,
+      "min" : null,
+      "max" : null,
+      "minLength" : null,
+      "maxLength" : null,
+      "minItems" : null,
+      "maxItems" : null,
+      "uniqueItems" : null,
+      "pattern" : null,
+      "enumValues" : [ "CSV", "AVRO", "JSON", "PARQUET" ]
+    },
+    "metadata" : {
+      "ui::defaultvalue::value" : "CSV",
+      "documentation::value" : "Format of Blob content"
+    },
+    "placeholder" : "",
+    "proposalDisplayNames" : {
+      "CSV" : "CSV",
+      "AVRO" : "AVRO",
+      "JSON" : "JSON",
+      "PARQUET" : "Parquet"
+    }
+  }, {
+    "path" : "configuration.jsonConfiguration",
+    "name" : "jsonConfiguration",
+    "displayName" : "JSON Configuration",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "format",
+      "documentation::value" : "JSON Configuration",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "JSON_ENABLED",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "jsonConfiguration",
+    "proposalDisplayNames" : null
+  }, {
+    "path" : "configuration.parquetConfiguration",
+    "name" : "parquetConfiguration",
+    "displayName" : "Parquet Configuration",
+    "type" : "OBJECT",
+    "defaultValue" : null,
+    "validation" : null,
+    "metadata" : {
+      "condition::if::target" : "format",
+      "documentation::value" : "Parquet Configuration",
+      "condition::if::evaluationStrategy" : "DEFAULT",
+      "condition::if::value" : "PARQUET_ENABLED",
+      "condition::if::negate" : "false"
+    },
+    "placeholder" : "parquetConfiguration",
+    "proposalDisplayNames" : null
+  } ],
+  "actions" : [ {
+    "family" : "Azure",
+    "name" : "ACTION_HEALTHCHECK",
+    "type" : "healthcheck",
+    "displayName" : "Check connection",
+    "properties" : [ {
+      "path" : "connection",
+      "name" : "connection",
+      "displayName" : "connection",
+      "type" : "OBJECT",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::gridlayout::Advanced::value" : "timeout",
+        "ui::gridlayout::Main::value" : "authMethod|accountName|endpointSuffix|sharedKey|sas",
+        "documentation::value" : "The datastore to connect Azure Data Lake Storage Gen2",
+        "action::healthcheck" : "ACTION_HEALTHCHECK",
+        "configurationtype::name" : "AdlsGen2Connection",
+        "configurationtype::type" : "datastore",
+        "definition::parameter::index" : "0"
+      },
+      "placeholder" : "connection",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.accountName",
+      "name" : "accountName",
+      "displayName" : "Account name",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Storage Account Name"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.authMethod",
+      "name" : "authMethod",
+      "displayName" : "Authentication method",
+      "type" : "ENUM",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : [ "SharedKey", "SAS" ]
+      },
+      "metadata" : {
+        "documentation::value" : "Authentication method"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : {
+        "SharedKey" : "Shared key",
+        "SAS" : "Shared access signature"
+      }
+    }, {
+      "path" : "connection.endpointSuffix",
+      "name" : "endpointSuffix",
+      "displayName" : "Endpoint suffix",
+      "type" : "STRING",
+      "defaultValue" : "dfs.core.windows.net",
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Endpoint suffix"
+      },
+      "placeholder" : "dfs.core.windows.net",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.sas",
+      "name" : "sas",
+      "displayName" : "SAS token *",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "condition::if::target" : "authMethod",
+        "documentation::value" : "Shared Access Signature",
+        "condition::if::evaluationStrategy" : "DEFAULT",
+        "condition::if::value" : "SAS",
+        "condition::if::negate" : "false"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.sharedKey",
+      "name" : "sharedKey",
+      "displayName" : "Shared key *",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "condition::if::target" : "authMethod",
+        "documentation::value" : "Storage Shared Key",
+        "ui::credential" : "true",
+        "condition::if::evaluationStrategy" : "DEFAULT",
+        "condition::if::value" : "SharedKey",
+        "condition::if::negate" : "false"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.timeout",
+      "name" : "timeout",
+      "displayName" : "Timeout",
+      "type" : "NUMBER",
+      "defaultValue" : "600",
+      "validation" : {
+        "required" : null,
+        "min" : 5,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Timeout"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    } ]
+  }, {
+    "family" : "Azure",
+    "name" : "ACTION_FILESYSTEMS",
+    "type" : "suggestions",
+    "displayName" : "Filesystems",
+    "properties" : [ {
+      "path" : "connection",
+      "name" : "connection",
+      "displayName" : "connection",
+      "type" : "OBJECT",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "ui::gridlayout::Advanced::value" : "timeout",
+        "ui::gridlayout::Main::value" : "authMethod|accountName|endpointSuffix|sharedKey|sas",
+        "documentation::value" : "The datastore to connect Azure Data Lake Storage Gen2",
+        "action::healthcheck" : "ACTION_HEALTHCHECK",
+        "configurationtype::name" : "AdlsGen2Connection",
+        "configurationtype::type" : "datastore",
+        "definition::parameter::index" : "0"
+      },
+      "placeholder" : "connection",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.accountName",
+      "name" : "accountName",
+      "displayName" : "Account name",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Storage Account Name"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.authMethod",
+      "name" : "authMethod",
+      "displayName" : "Authentication method",
+      "type" : "ENUM",
+      "defaultValue" : null,
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : [ "SharedKey", "SAS" ]
+      },
+      "metadata" : {
+        "documentation::value" : "Authentication method"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : {
+        "SharedKey" : "Shared key",
+        "SAS" : "Shared access signature"
+      }
+    }, {
+      "path" : "connection.endpointSuffix",
+      "name" : "endpointSuffix",
+      "displayName" : "Endpoint suffix",
+      "type" : "STRING",
+      "defaultValue" : "dfs.core.windows.net",
+      "validation" : {
+        "required" : true,
+        "min" : null,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Endpoint suffix"
+      },
+      "placeholder" : "dfs.core.windows.net",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.sas",
+      "name" : "sas",
+      "displayName" : "SAS token *",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "condition::if::target" : "authMethod",
+        "documentation::value" : "Shared Access Signature",
+        "condition::if::evaluationStrategy" : "DEFAULT",
+        "condition::if::value" : "SAS",
+        "condition::if::negate" : "false"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.sharedKey",
+      "name" : "sharedKey",
+      "displayName" : "Shared key *",
+      "type" : "STRING",
+      "defaultValue" : null,
+      "validation" : null,
+      "metadata" : {
+        "condition::if::target" : "authMethod",
+        "documentation::value" : "Storage Shared Key",
+        "ui::credential" : "true",
+        "condition::if::evaluationStrategy" : "DEFAULT",
+        "condition::if::value" : "SharedKey",
+        "condition::if::negate" : "false"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    }, {
+      "path" : "connection.timeout",
+      "name" : "timeout",
+      "displayName" : "Timeout",
+      "type" : "NUMBER",
+      "defaultValue" : "600",
+      "validation" : {
+        "required" : null,
+        "min" : 5,
+        "max" : null,
+        "minLength" : null,
+        "maxLength" : null,
+        "minItems" : null,
+        "maxItems" : null,
+        "uniqueItems" : null,
+        "pattern" : null,
+        "enumValues" : null
+      },
+      "metadata" : {
+        "documentation::value" : "Timeout"
+      },
+      "placeholder" : "",
+      "proposalDisplayNames" : null
+    } ]
+  } ]
+} ]

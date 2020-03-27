@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_AinCUa-REeiXFrwOIER9GA" label="CITEST_REFPROJECT" description="" language="java" technicalLabel="CITEST_REFPROJECT" creationDate="2018-09-03T18:48:25.739+0300" author="_AinCUq-REeiXFrwOIER9GA" productVersion="Talend Data Fabric-7.3.1.20200219_1130" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/Talend/tesb-qa-citest-models.git&quot;,&quot;settings&quot;:&quot;010&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+    <migrationTask xmi:id="_ltSEUCirEeqYxMzecPj6Ig" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_AinCUq-REeiXFrwOIER9GA" login="admin@company.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_BewhgK-REeiXFrwOIER9GA" login="aaa@company.com" firstName="aaa" lastName="bbb" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_yEXqEFJeEequbp-xAYLL9w" login="security@company.com" firstName="security" lastName="security" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_yEXqEVJeEequbp-xAYLL9w" login="security@company.com" firstName="security" lastName="security" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_yH71wFOuEeqHM5iDQR5SYA" login="rpervushyn@talend.com" firstName="Ruslan" lastName="Pervushyn" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_yH71wVOuEeqHM5iDQR5SYA" login="rpervushyn@talend.com" firstName="Ruslan" lastName="Pervushyn" type="DI" additionnalData="{}"/>
+</xmi:XMI>
