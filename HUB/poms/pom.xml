@@ -8,6 +8,10 @@
   <packaging>pom</packaging>
   <name>HUB Codes Master</name>
   <url>http://www.talend.org/</url>
+  <modules>
+    <module>code/routines</module>
+    <module>code/beans</module>
+  </modules>
   <properties>
     <signer.version>7.4.1-SNAPSHOT</signer.version>
     <talend.project.name>HUB</talend.project.name>
