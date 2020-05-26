@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>code/beans</module>
     <module>jobs/process/aa_0.1</module>
+    <module>jobs/process/ee_0.1</module>
   </modules>
   <properties>
     <signer.version>7.4.1-SNAPSHOT</signer.version>
