@@ -11,6 +11,7 @@
   <modules>
     <module>code/beans</module>
     <module>code/routines</module>
+    <module>jobs/process/copy_of_tjava_0.1</module>
     <module>jobs/process/tjava_0.1</module>
   </modules>
   <properties>
