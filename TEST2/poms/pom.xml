@@ -8,6 +8,10 @@
   <packaging>pom</packaging>
   <name>TEST2 Codes Master</name>
   <url>http://www.talend.org/</url>
+  <modules>
+    <module>code/beans</module>
+    <module>code/routines</module>
+  </modules>
   <properties>
     <signer.version>7.4.1-SNAPSHOT</signer.version>
     <talend.project.name>TEST2</talend.project.name>
