@@ -9,16 +9,16 @@
   <name>AA Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
-    <module>code/routines</module>
     <module>code/beans</module>
+    <module>code/routines</module>
     <module>jobs/process/aae_0.1</module>
   </modules>
   <properties>
-    <signer.version>7.4.1-SNAPSHOT</signer.version>
     <talend.project.name>AA</talend.project.name>
+    <signer.version>7.4.1-SNAPSHOT</signer.version>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
