@@ -14,11 +14,11 @@
     <module>jobs/process/aae_0.1</module>
   </modules>
   <properties>
-    <talend.project.name>AA</talend.project.name>
     <signer.version>7.4.1-SNAPSHOT</signer.version>
+    <talend.project.name>AA</talend.project.name>
     <encoding>UTF-8</encoding>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
