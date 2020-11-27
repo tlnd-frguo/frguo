@@ -12,6 +12,30 @@
     <module>code/beans</module>
     <module>code/routines</module>
     <module>jobs/process/aae_0.1</module>
+    <module>jobs/process/demorest_0.1</module>
+    <module>jobs/process/demorestconsumer_0.1</module>
+    <module>jobs/process/demoserviceconsumer_0.1</module>
+    <module>jobs/routes/ErrorHandler/contextscopeerrorhandler_0.1</module>
+    <module>jobs/routes/ErrorHandler/routescopeerrorhandler_0.1</module>
+    <module>jobs/routes/JMStoHTTP/jmstohttp_0.1</module>
+    <module>jobs/routes/JMStoHTTP/receivefromjms_0.1</module>
+    <module>jobs/routes/JMStoHTTP/sendtojms_0.1</module>
+    <module>jobs/routes/MQ/mqmultireceiver_0.1</module>
+    <module>jobs/routes/MQ/mqmultisender_0.1</module>
+    <module>jobs/routes/contentbasedrouting_0.1</module>
+    <module>jobs/routes/demoresourceroute_0.1</module>
+    <module>jobs/routes/demorestclientroute_0.1</module>
+    <module>jobs/routes/demorestroute_0.1</module>
+    <module>jobs/routes/directsedademo_0.1</module>
+    <module>jobs/routes/resttosoap_0.1</module>
+    <module>jobs/routes/serviceproxy_0.1</module>
+    <module>jobs/routes/simpleloadbalancer_0.1</module>
+    <module>jobs/routes/simplerecipientlist_0.1</module>
+    <module>jobs/routes/soaptorest_0.1</module>
+    <module>jobs/routes/vmspringdemo_0.1</module>
+    <module>jobs/services/crmservice_0.1</module>
+    <module>jobs/services/demoservice_0.1</module>
+    <module>jobs/services/reservationservice_0.1</module>
   </modules>
   <properties>
     <signer.version>7.4.1-SNAPSHOT</signer.version>
