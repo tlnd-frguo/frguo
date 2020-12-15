@@ -5,4 +5,6 @@
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_Eh7a4j7KEeuhx82BvgoZZg" login="xqdong@talend.com" firstName="Dong" lastName="Xiaoqian" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_IXRUwD7KEeuhx82BvgoZZg" login="yyang@talend.com" firstName="Yang" lastName="Yongsheng" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_PFtGMD7LEeu4lPAXJxY5hg" login="Copy_of_security@company.com" firstName="security" lastName="security" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_PFtGMT7LEeu4lPAXJxY5hg" login="frguo@talend.com" firstName="Guo" lastName="Furong" type="MDM" additionnalData="{}"/>
 </xmi:XMI>
