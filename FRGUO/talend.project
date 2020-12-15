@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_Eh7a4T7KEeuhx82BvgoZZg" label="frguo" description="" language="java" technicalLabel="FRGUO" creationDate="2020-12-15T19:16:54.577+0800" author="_Eh7a4j7KEeuhx82BvgoZZg" productVersion="Talend Data Fabric-7.3.1.20200219_1130" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/tlnd-frguo/frguo.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="MDM">
+    <migrationTask xmi:id="_FOrMID7KEeuhx82BvgoZZg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_Eh7a4j7KEeuhx82BvgoZZg" login="xqdong@talend.com" firstName="Dong" lastName="Xiaoqian" type="MDM" additionnalData="{}"/>
+</xmi:XMI>
