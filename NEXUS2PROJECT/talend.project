@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_Jcf7AUbEEeyiuoi3vcSfww" label="Nexus2Project" description="" language="java" technicalLabel="NEXUS2PROJECT" author="_Jcf7AkbEEeyiuoi3vcSfww" productVersion="Talend Data Fabric-8.0.1.20211020_1937-SNAPSHOT" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/tlnd-frguo/frguo.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="MDM">
+  <TalendProperties:Project xmi:id="_Jcf7AUbEEeyiuoi3vcSfww" label="Nexus2Project" description="" language="java" technicalLabel="NEXUS2PROJECT" author="_Jcf7AkbEEeyiuoi3vcSfww" productVersion="Talend Data Fabric-8.0.1.20211020_1937-SNAPSHOT" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/tlnd-frguo/frguo.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="MDM" itemsRelationVersion="1.3">
     <migrationTask xmi:id="_JdVBcEbEEeyiuoi3vcSfww" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_Jcf7AkbEEeyiuoi3vcSfww" login="security@company.com" firstName="security" lastName="security" type="MDM" additionnalData="{}"/>
