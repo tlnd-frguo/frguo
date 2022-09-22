@@ -12,6 +12,7 @@
     <module>code/beans</module>
     <module>code/routines</module>
     <module>jobs/process/tjava_0.1</module>
+    <module>jobs/process/tjava_0.2</module>
   </modules>
   <properties>
     <talend.project.name>TAC731</talend.project.name>
