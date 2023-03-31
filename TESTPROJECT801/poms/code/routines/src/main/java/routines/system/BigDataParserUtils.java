@@ -107,17 +107,17 @@ public class BigDataParserUtils extends ParserUtils {
      * @param list the list to parse into itself.
      * @return the list itself
      */
-
+    
     public static <T> List<T> parseTo_List(List<T> list) {
         return list;
     }
 
     /*======Parse anything to Character or char======*/
-
+    
     public static Character parseTo_Character(String s) {
         return isBlank(s) ? null : s.charAt(0);
     }
-
+    
     public static char parseTo_char(String s) {
         return isBlank(s) ? defaultValueChar : s.charAt(0);
     }
@@ -129,15 +129,15 @@ public class BigDataParserUtils extends ParserUtils {
     public static char parseTo_char(Character input) {
         return input == null ? defaultValueChar : input;
     }
-
+    
     /*======Parse anything to Boolean or boolean======*/
 
     public static Boolean parseTo_Boolean(String s) {
-        return isBlank(s) ? null : "1".equals(s) ? true : Boolean.parseBoolean(s);
+    	return isBlank(s) ? null : "1".equals(s) ? true : Boolean.parseBoolean(s);
     }
-
+    
     public static boolean parseTo_boolean(String s) {
-        return isBlank(s) ? defaultValueBoolean : parseTo_Boolean(s);
+    	return isBlank(s) ? defaultValueBoolean : parseTo_Boolean(s);
     }
 
     public static boolean parseTo_boolean(Object input) {
@@ -148,23 +148,23 @@ public class BigDataParserUtils extends ParserUtils {
     }
 
     public static boolean parseTo_boolean(Boolean b) {
-        return b == null ? defaultValueBoolean : b;
+    	return b == null ? defaultValueBoolean : b;
     }
 
-
-
+    
+    
     public static Object parseTo_Object(Object input) {
         return input;
     }
-
+    
     /*======Parse anything to String======*/
 
     public static String parseTo_String(java.nio.ByteBuffer input) {
-        return input == null ? null : new String(input.array());
+    	return input == null ? null : new String(input.array());
     }
 
     public static String parseTo_String(Object input) {
-        return input == null ? null : String.valueOf(input);
+    	return input == null ? null : String.valueOf(input);
     }
 
     public static String parseTo_String(java.util.Date input, String pattern) {
@@ -172,7 +172,7 @@ public class BigDataParserUtils extends ParserUtils {
     }
 
     public static String parseTo_String(byte input) {
-        return Byte.toString(input);
+    	return Byte.toString(input);
     }
 
     public static String parseTo_String(char input) {
@@ -200,7 +200,7 @@ public class BigDataParserUtils extends ParserUtils {
     }
 
     /*======Parse anything to routines.system.Document======*/
-
+    
     public static routines.system.Document parseTo_Document(String s, boolean ignoreDTD, String encoding)
             throws org.dom4j.DocumentException {
         if (isBlank(s)) {
@@ -229,7 +229,7 @@ public class BigDataParserUtils extends ParserUtils {
     }
 
     /*======Parse anything to Date======*/
-
+    
     public static java.util.Date parseTo_Date(String s, String pattern) {
         if (isBlank(s)) {
             return null;
@@ -259,7 +259,7 @@ public class BigDataParserUtils extends ParserUtils {
         return date;
     }
     public static java.util.Date parseTo_Date(Object o, String pattern) {
-        return parseTo_Date(parseTo_String(o), pattern);
+    	return parseTo_Date(parseTo_String(o), pattern);
     }
 
     public static java.util.Date parseTo_Date(String s, String pattern, boolean lenient) {
@@ -291,7 +291,7 @@ public class BigDataParserUtils extends ParserUtils {
 
         return date;
     }
-
+    
     public static java.util.Date parseTo_Date(java.util.Date input) {
         return input;
     }
@@ -314,73 +314,69 @@ public class BigDataParserUtils extends ParserUtils {
     }
 
     /*======Parse anything to Integer======*/
-
+    
     public static Integer parseTo_Integer(String s) {
-        return isBlank(s) ? null : Integer.valueOf(s);
+    	return isBlank(s) ? null : Integer.valueOf(s);
     }
     public static Integer parseTo_Integer(Object input) {
-        return input == null ? null : parseTo_Integer(input.toString());
+    	return input == null ? null : parseTo_Integer(input.toString());
     }
 
     public static Integer parseTo_Integer(String s, boolean isDecode) {
-        if (isBlank(s)) {
-            return null;
-        }
+        if (isBlank(s)) return null;
         return isDecode ? parseTo_Integer(s) : Integer.valueOf(s);
     }
     public static Integer parseTo_Integer(Number input) {
-        return input == null ? null : input.intValue();
+    	return input == null ? null : ((Number)input).intValue();
     }
 
     public static Integer parseTo_Integer(Double input) {
-        return input == null || Double.isNaN(input) ? null : input.intValue();
+        return input == null || Double.isNaN(input) ? null : ((Double)input).intValue();
     }
 
     public static Integer parseTo_Integer(Float input) {
-        return input == null || Float.isNaN(input) ? null : input.intValue();
+        return input == null || Float.isNaN(input) ? null : ((Float)input).intValue();
     }
 
     /*======Parse anything to int======*/
-
+    
     public static int parseTo_int(String s) {
-        return isBlank(s) ? defaultValueInt : Integer.parseInt(s);
+    	return isBlank(s) ? defaultValueInt : Integer.parseInt(s);
     }
-
+    
     public static int parseTo_int(Number input) {
-        return input == null ? defaultValueInt : input.intValue();
+    	return input == null ? defaultValueInt : ((Number)input).intValue();
     }
 
     public static int parseTo_int(Double input) {
-        return input == null || Double.isNaN(input) ? defaultValueInt : input.intValue();
+        return input == null || Double.isNaN(input) ? defaultValueInt : ((Double)input).intValue();
     }
 
     public static int parseTo_int(Float input) {
-        return input == null || Float.isNaN(input) ? defaultValueInt : input.intValue();
+        return input == null || Float.isNaN(input) ? defaultValueInt : ((Float)input).intValue();
     }
 
     /*======Parse anything to Byte======*/
-
+    
     public static Byte parseTo_Byte(String s) {
         return isBlank(s) ? null : Byte.decode(s);
     }
 
     public static Byte parseTo_Byte(String s, boolean isDecode) {
-        if (isBlank(s)) {
-            return null;
-        }
+        if (isBlank(s)) return null;
         return isDecode ? parseTo_Byte(s) : Byte.parseByte(s);
     }
-
+    
     public static Byte parseTo_Byte(Number input) {
-        return input == null ? null : input.byteValue();
+        return input == null ? null : ((Number)input).byteValue();
     }
 
     public static Byte parseTo_Byte(Double input) {
-        return input == null || Double.isNaN(input) ? null : input.byteValue();
+        return input == null || Double.isNaN(input) ? null : ((Double)input).byteValue();
     }
 
     public static Byte parseTo_Byte(Float input) {
-        return input == null || (Float.isNaN(input)) ? null : input.byteValue();
+        return input == null || (Float.isNaN(input)) ? null : ((Float)input).byteValue();
     }
 
     public static Byte parseTo_Byte(Boolean input) {
@@ -388,96 +384,96 @@ public class BigDataParserUtils extends ParserUtils {
     }
 
     /*======Parse anything to byte======*/
-
+    
     public static byte parseTo_byte(String s) {
         return isBlank(s) ? defaultValueByte : Byte.decode(s).byteValue();
     }
-
+    
     public static byte parseTo_byte(Number input) {
-        return input == null ? defaultValueByte : input.byteValue();
+        return input == null ? defaultValueByte : ((Number)input).byteValue();
     }
 
     public static byte parseTo_byte(Double input) {
-        return input == null || Double.isNaN(input) ? defaultValueByte : input.byteValue();
+        return input == null || Double.isNaN(input) ? defaultValueByte : ((Double)input).byteValue();
     }
 
     public static byte parseTo_byte(Float input) {
-        return input == null || Float.isNaN(input) ? defaultValueByte : input.byteValue();
+        return input == null || Float.isNaN(input) ? defaultValueByte : ((Float)input).byteValue();
     }
 
     public static byte parseTo_byte(Boolean input) {
         return input == null ? defaultValueByte : (byte)(input ? 1 : 0);
     }
-
+    
     public static byte[] parseTo_bytes(ByteBuffer b) {
         return b.array();
     }
 
     /*======Parse anything to Double======*/
-
+    
     public static Double parseTo_Double(String s) {
-        return isBlank(s) ? null : Double.parseDouble(s);
+    	return isBlank(s) ? null : Double.parseDouble(s);
     }
-
+    
     public static Double parseTo_Double(Object input) {
-        return input == null ? null : parseTo_Double(input.toString());
+    	return input == null ? null : parseTo_Double(input.toString());
     }
-
+    
     public static Double parseTo_Double(Number input) {
-        return input == null ? null : input.doubleValue();
+        return input == null ? null : ((Number)input).doubleValue();
     }
 
     public static Double parseTo_Double(Float input) {
-        return input == null || Float.isNaN(input) ? null : input.doubleValue();
+    	return input == null || Float.isNaN(input) ? null : ((Float)input).doubleValue();
     }
 
     /*======Parse anything to double======*/
-
+    
     public static double parseTo_double(String s) {
-        return isBlank(s) ? defaultValueDouble : parseTo_Double(s);
+    	return isBlank(s) ? defaultValueDouble : parseTo_Double(s);
     }
-
+    
     public static double parseTo_double(Number input) {
-        return  input == null ? defaultValueDouble : input.doubleValue();
+    	return  input == null ? defaultValueDouble : ((Number)input).doubleValue();
     }
 
     public static double parseTo_double(Float input) {
-        return input == null || Float.isNaN(input) ? defaultValueDouble : input.doubleValue();
+    	return input == null || Float.isNaN(input) ? defaultValueDouble : ((Float)input).doubleValue();
     }
 
     /*======Parse anything to Float======*/
-
+    
     public static Float parseTo_Float(String s) {
-        return isBlank(s) ? null : Float.parseFloat(s);
+    	return isBlank(s) ? null : Float.parseFloat(s);
     }
-
+    
     public static Float parseTo_Float(Object input) {
         return input == null ? null : parseTo_Float(input.toString());
     }
-
+    
     public static Float parseTo_Float(Number input) {
-        return input == null ? null : input.floatValue();
+    	return input == null ? null : ((Number)input).floatValue();
     }
 
     public static Float parseTo_Float(Double input) {
-        return input == null || Double.isNaN(input) ? null : input.floatValue();
+        return input == null || Double.isNaN(input) ? null : ((Double)input).floatValue();
     }
 
     public static Float parseTo_Float(Float input) {
-        return input == null || Float.isNaN(input) ? null : input.floatValue();
+        return input == null || Float.isNaN(input) ? null : ((Float)input).floatValue();
     }
 
     /*======Parse anything to float======*/
-
+    
     public static float parseTo_float(String s) {
-        return isBlank(s) ? defaultValueFloat : Float.parseFloat(s);
+    	return isBlank(s) ? defaultValueFloat : Float.parseFloat(s);
     }
     public static float parseTo_float(Number input) {
-        return input == null ? defaultValueFloat : input.floatValue();
+    	return input == null ? defaultValueFloat : ((Number)input).floatValue();
     }
 
     public static float parseTo_float(Double input) {
-        return input == null || Double.isNaN(input) ? defaultValueFloat : input.floatValue();
+    	return input == null || Double.isNaN(input) ? defaultValueFloat : ((Double)input).floatValue();
     }
 
     /*======Parse anything to BigDecimal======*/
@@ -496,11 +492,11 @@ public class BigDataParserUtils extends ParserUtils {
             }
         }
     }
-
+    
     public static BigDecimal parseTo_BigDecimal(Number input) {
-        return  input == null ? null : new BigDecimal(input.toString());
+    	return  input == null ? null : new BigDecimal(input.toString());
     }
-
+    
     public static BigDecimal parseTo_BigDecimal(Double input) {
         return  input == null || Double.isNaN(input) ? null : new BigDecimal(Double.toString(input));
     }
@@ -510,106 +506,102 @@ public class BigDataParserUtils extends ParserUtils {
     }
 
     /*======Parse anything to Long======*/
-
+    
 
     public static Long parseTo_Long(String s) {
-        return isBlank(s) ? null : Long.decode(s);
+    	return isBlank(s) ? null : Long.decode(s);
     }
-
+    
     public static Long parseTo_Long(Object input) {
         return input == null ? null : parseTo_Long(input.toString());
     }
 
     public static Long parseTo_Long(String s, boolean isDecode) {
-        if (isBlank(s)) {
-            return null;
-        }
+        if (isBlank(s)) return null;
         return isDecode ? parseTo_Long(s) : Long.parseLong(s);
     }
     public static Long parseTo_Long(Number input) {
-        return input == null ? null : input.longValue();
+    	return input == null ? null : ((Number)input).longValue();
     }
 
     public static Long parseTo_Long(Double input) {
-        return input == null || Double.isNaN(input) ? null : input.longValue();
+        return input == null || Double.isNaN(input) ? null : ((Double)input).longValue();
     }
 
     public static Long parseTo_Long(Float input) {
-        return input == null || Float.isNaN(input) ? null : input.longValue();
+        return input == null || Float.isNaN(input) ? null : ((Float)input).longValue();
     }
 
     /*======Parse anything to long======*/
-
+    
     public static long parseTo_long(String s) {
-        return isBlank(s) ? defaultValueLong : Long.decode(s);
+    	return isBlank(s) ? defaultValueLong : Long.decode(s);
     }
-
+    
     public static long parseTo_long(Object input) {
         return input == null ? defaultValueLong : parseTo_long(input.toString());
     }
     public static long parseTo_long(Number input) {
-        return input == null ? defaultValueLong : input.longValue();
+    	return input == null ? defaultValueLong : ((Number)input).longValue();
     }
 
     public static long parseTo_long(Double input) {
-        return input == null || Double.isNaN(input) ? defaultValueLong : input.longValue();
+        return input == null || Double.isNaN(input) ? defaultValueLong : ((Double)input).longValue();
     }
 
     public static long parseTo_long(Float input) {
-        return input == null || Float.isNaN(input) ? defaultValueLong : input.longValue();
+        return input == null || Float.isNaN(input) ? defaultValueLong : ((Float)input).longValue();
     }
 
     /*======Parse anything to Short======*/
-
+    
 
     public static Short parseTo_Short(String s) {
-        return isBlank(s) ? null : Short.decode(s);
+    	return isBlank(s) ? null : Short.decode(s);
     }
-
+    
     public static Short parseTo_Short(Object input) {
         return input == null ? null : parseTo_Short(input.toString());
     }
 
     public static Short parseTo_Short(String s, boolean isDecode) {
-        if (isBlank(s)) {
-            return null;
-        }
+        if (isBlank(s)) return null;
         return isDecode ? parseTo_Short(s) : Short.parseShort(s);
     }
-
+    
     public static Short parseTo_Short(Number input) {
-        return input == null ? null : input.shortValue();
+    	return input == null ? null : ((Number)input).shortValue();
     }
 
     public static Short parseTo_Short(Double input) {
-        return input == null || Double.isNaN(input) ? null : input.shortValue();
+        return input == null || Double.isNaN(input) ? null : ((Double)input).shortValue();
     }
 
     public static Short parseTo_Short(Float input) {
-        return input == null || Float.isNaN(input) ? null : input.shortValue();
+        return input == null || Float.isNaN(input) ? null : ((Float)input).shortValue();
     }
 
     /*======Parse anything to short======*/
-
+    
     public static short parseTo_short(String s) {
-        return isBlank(s) ? defaultValueShort : Short.decode(s);
+    	return isBlank(s) ? defaultValueShort : Short.decode(s);
     }
     public static short parseTo_short(Number input) {
-        return input == null ? defaultValueShort : input.shortValue();
+    	 return input == null ? defaultValueShort : ((Number)input).shortValue();
     }
     public static short parseTo_short(Double input) {
-        return input == null || Double.isNaN(input) ? defaultValueShort : input.shortValue();
+        return input == null || Double.isNaN(input) ? defaultValueShort : ((Double)input).shortValue();
     }
 
     public static short parseTo_short(Float input) {
-        return input == null || Float.isNaN(input) ? defaultValueShort : input.shortValue();
+        return input == null || Float.isNaN(input) ? defaultValueShort : ((Float)input).shortValue();
     }
-
+    
     /*======Parse anything to Timestamp======*/
     public static Timestamp parseTo_Timestamp(Date d) {
         return new Timestamp(d.getTime());
     }
-
+    
     /*======toDatasetCompliantType facade methods======*/
     /**
      * Convert Date to Timestamp
@@ -617,26 +609,19 @@ public class BigDataParserUtils extends ParserUtils {
     public static Timestamp toDatasetCompliantType(Date d) {
         return d == null ? null : parseTo_Timestamp(d);
     }
-
-    public static java.sql.Date toDatasetCompliantDate(Date d) {
-        return d == null ? null : new java.sql.Date(d.getTime());
-    }
-
+    
     /**
      * Convert Character to String
      */
     public static String toDatasetCompliantType(Character c) {
         return parseTo_String(c);
     }
-
+    
     /**
      * Convert ByteBuffer to byte[]
      */
     public static byte[] toDatasetCompliantType(ByteBuffer b) {
         return parseTo_bytes(b);
-    }
+    }    
 
-    public static boolean isAFullURI(String folder) {
-        return folder == null ? false : folder.contains("//");
-    }
 }
