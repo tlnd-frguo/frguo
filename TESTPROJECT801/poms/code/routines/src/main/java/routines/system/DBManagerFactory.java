@@ -46,8 +46,6 @@ public class DBManagerFactory {
                 manager = new IngresManager(curDBMS.getDBmsId());
             } else if (curDBMS == DBMSConstants.VECTORWISE) {
                 manager = new VectorWiseManager(curDBMS.getDBmsId());
-            } else if (curDBMS == DBMSConstants.INTERBASE) {
-                manager = new InterbaseManager(curDBMS.getDBmsId());
             } else if (curDBMS == DBMSConstants.JAVADB) {
                 manager = new JavaDBManager(curDBMS.getDBmsId());
             } else if (curDBMS == DBMSConstants.MAXDB) {
@@ -504,26 +502,18 @@ class IngresManager extends DBManager {
 
 }
 
-class InterbaseManager extends DBManager {
+class VectorWiseManager extends IngresManager {
 
     private String dbmsId;
 
-    public InterbaseManager(String dbmsId) {
-        super();
+    public VectorWiseManager(String dbmsId) {
+        super(dbmsId);
         this.dbmsId = dbmsId;
     }
 
     protected String getDBMSId() {
         // TODO Auto-generated method stub
-        return this.dbmsId;
-    }
-
-    protected String getLProtectedChar() {
-        return "\"";
-    }
-
-    protected String getRProtectedChar() {
-        return "\"";
+        return dbmsId;
     }
 
 }
@@ -1016,22 +1006,6 @@ class TeradataManager extends DBManager {
 
     protected String getRProtectedChar() {
         return "\"";
-    }
-
-}
-
-class VectorWiseManager extends IngresManager {
-
-    private String dbmsId;
-
-    public VectorWiseManager(String dbmsId) {
-        super(dbmsId);
-        this.dbmsId = dbmsId;
-    }
-
-    protected String getDBMSId() {
-        // TODO Auto-generated method stub
-        return dbmsId;
     }
 
 }

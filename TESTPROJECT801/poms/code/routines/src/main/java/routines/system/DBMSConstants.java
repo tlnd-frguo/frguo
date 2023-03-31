@@ -108,18 +108,7 @@ public enum DBMSConstants {
             return "mapping_vectorwise.xml";
         }
     },
-
-    INTERBASE {
-
-        String getDBmsId() {
-            return "interbase_id";
-        }
-
-        String getDBmsMappingFile() {
-            return "mapping_interbase.xml";
-        }
-    },
-
+    
     JAVADB {
 
         String getDBmsId() {
