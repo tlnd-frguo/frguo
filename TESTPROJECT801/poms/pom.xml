@@ -4,16 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example.testproject801</groupId>
   <artifactId>code.Master</artifactId>
-  <version>8.8.8</version>
+  <version>8.0.1</version>
   <packaging>pom</packaging>
   <name>TESTPROJECT801 Codes Master</name>
   <url>http://www.talend.org/</url>
   <properties>
     <talend.project.name>TESTPROJECT801</talend.project.name>
-    <slf4j-api.version>1.7.34</slf4j-api.version>
     <encoding>UTF-8</encoding>
     <maven.deploy.skip>true</maven.deploy.skip>
-    <signer.version>8.8.8-SNAPSHOT</signer.version>
+    <signer.version>8.0.1-SNAPSHOT</signer.version>
   </properties>
   <build>
     <pluginManagement>
@@ -54,7 +53,7 @@
             <dependency>
               <groupId>org.apache.maven</groupId>
               <artifactId>maven-compat</artifactId>
-              <version>3.8.6</version>
+              <version>3.8.1</version>
             </dependency>
             <dependency>
               <groupId>org.apache.commons</groupId>
@@ -64,12 +63,7 @@
             <dependency>
               <groupId>org.apache.maven</groupId>
               <artifactId>maven-core</artifactId>
-              <version>3.8.6</version>
-            </dependency>
-            <dependency>
-              <groupId>com.google.guava</groupId>
-              <artifactId>guava</artifactId>
-              <version>30.0-jre</version>
+              <version>3.8.1</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -100,12 +94,7 @@
             <dependency>
               <groupId>org.apache.maven</groupId>
               <artifactId>maven-core</artifactId>
-              <version>3.8.6</version>
-            </dependency>
-            <dependency>
-              <groupId>com.google.guava</groupId>
-              <artifactId>guava</artifactId>
-              <version>30.0-jre</version>
+              <version>3.8.1</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -146,12 +135,7 @@
             <dependency>
               <groupId>org.apache.maven</groupId>
               <artifactId>maven-core</artifactId>
-              <version>3.8.6</version>
-            </dependency>
-            <dependency>
-              <groupId>com.google.guava</groupId>
-              <artifactId>guava</artifactId>
-              <version>30.0-jre</version>
+              <version>3.8.1</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -197,17 +181,12 @@
             <dependency>
               <groupId>org.apache.maven</groupId>
               <artifactId>maven-compat</artifactId>
-              <version>3.8.6</version>
+              <version>3.8.1</version>
             </dependency>
             <dependency>
               <groupId>org.apache.maven</groupId>
               <artifactId>maven-core</artifactId>
-              <version>3.8.6</version>
-            </dependency>
-            <dependency>
-              <groupId>com.google.guava</groupId>
-              <artifactId>guava</artifactId>
-              <version>30.0-jre</version>
+              <version>3.8.1</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -215,22 +194,6 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.20</version>
           <dependencies>
-            <dependency>
-              <groupId>org.sonatype.plexus</groupId>
-              <artifactId>plexus-sec-dispatcher</artifactId>
-              <version>1.3</version>
-              <exclusions>
-                <exclusion>
-                  <artifactId>plexus-cipher</artifactId>
-                  <groupId>org.sonatype.plexus</groupId>
-                </exclusion>
-              </exclusions>
-            </dependency>
-            <dependency>
-              <groupId>org.codehaus.plexus</groupId>
-              <artifactId>plexus-cipher</artifactId>
-              <version>1.8</version>
-            </dependency>
             <dependency>
               <groupId>org.codehaus.plexus</groupId>
               <artifactId>plexus-utils</artifactId>
@@ -240,26 +203,6 @@
               <groupId>junit</groupId>
               <artifactId>junit</artifactId>
               <version>4.13.2</version>
-            </dependency>
-            <dependency>
-              <groupId>org.apache.maven</groupId>
-              <artifactId>maven-settings</artifactId>
-              <version>3.8.3</version>
-            </dependency>
-            <dependency>
-              <groupId>org.slf4j</groupId>
-              <artifactId>slf4j-api</artifactId>
-              <version>${slf4j-api.version}</version>
-            </dependency>
-            <dependency>
-              <groupId>org.slf4j</groupId>
-              <artifactId>slf4j-jdk14</artifactId>
-              <version>${slf4j-api.version}</version>
-            </dependency>
-            <dependency>
-              <groupId>org.slf4j</groupId>
-              <artifactId>jcl-over-slf4j</artifactId>
-              <version>${slf4j-api.version}</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -277,36 +220,16 @@
               <artifactId>commons-codec</artifactId>
               <version>1.15</version>
             </dependency>
-            <dependency>
-              <groupId>org.apache.maven.shared</groupId>
-              <artifactId>maven-shared-utils</artifactId>
-              <version>3.3.3</version>
-            </dependency>
-            <dependency>
-              <groupId>commons-io</groupId>
-              <artifactId>commons-io</artifactId>
-              <version>2.8.0</version>
-            </dependency>
-            <dependency>
-              <groupId>org.apache.maven</groupId>
-              <artifactId>maven-settings</artifactId>
-              <version>3.8.3</version>
-            </dependency>
           </dependencies>
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
+          <version>2.7</version>
           <dependencies>
             <dependency>
               <groupId>org.codehaus.plexus</groupId>
               <artifactId>plexus-utils</artifactId>
               <version>3.0.24</version>
-            </dependency>
-            <dependency>
-              <groupId>org.apache.maven</groupId>
-              <artifactId>maven-settings</artifactId>
-              <version>3.8.3</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -316,7 +239,7 @@
       <plugin>
         <groupId>org.talend.ci</groupId>
         <artifactId>builder-maven-plugin</artifactId>
-        <version>8.8.8-SNAPSHOT</version>
+        <version>8.0.1-SNAPSHOT</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>
@@ -343,7 +266,7 @@
           <plugin>
             <groupId>org.talend.ci</groupId>
             <artifactId>cloudpublisher-maven-plugin</artifactId>
-            <version>8.8.8-SNAPSHOT</version>
+            <version>8.0.1-SNAPSHOT</version>
             <executions>
               <execution>
                 <phase>deploy</phase>
